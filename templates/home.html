@@ -4,7 +4,7 @@ Home
 {% endblock%}
 {% block content %}
     <h1>Home</h1>
-    <form action="/questions/0">{{survey['title']}}
+    <form action="/survey-start" method="POST">{{survey['title']}}
         <div class="instructions">{{survey.instructions}}</div>
         <button>Start!</button>
     </form>
